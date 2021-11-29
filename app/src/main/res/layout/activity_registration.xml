@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/create_account"
+                android:textColor="@color/black"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints=""
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/password_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/register"
+                android:textAppearance="?android:textAppearanceMedium"
+                tools:ignore="DuplicateSpeakableTextCheck"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/already_have_an_account_sign_in"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
